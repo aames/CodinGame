@@ -42,7 +42,6 @@ static bool contains(int value, std::vector<int> vec)
 			return true;
 		}
 	}
-
 	return false;
 }
 
@@ -72,7 +71,8 @@ int main()
 	}
 
 	int lastSI = -1; // the last known location of the Skynet bot - init to -1 (out of bounds)
-					 // game loop
+	
+	// game loop
 	while (1) {
 		cerr << "entering game loop" << endl;
 		int SI; // The index of the node on which the Skynet agent is positioned this turn
